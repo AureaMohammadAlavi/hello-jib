@@ -36,6 +36,13 @@
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>1.6.1</version>
+                
+                <configuration>
+                  <to>
+                    <image>gcr.io/pubsubdemo-1569168935088/my-app</image>
+                    <credHelper>gcr</credHelper>
+                  </to>
+                </configuration>                
             </plugin>
         </plugins>
     </build>
